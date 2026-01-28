@@ -1,15 +1,15 @@
 {
   "name": "nitrado-forwarder",
   "version": "1.0.0",
-  "description": "Minimal HTTP forwarder for Nitrado API that shields the bot from the API token",
-  "main": "src/index.js",
+  "description": "Minimal HTTP forwarder for Nitrado API - Vercel Edge Function",
+  "type": "module",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "node --watch src/index.js"
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
   },
-  "keywords": ["nitrado", "proxy", "forwarder", "gameserver"],
+  "keywords": ["nitrado", "proxy", "forwarder", "gameserver", "vercel", "edge"],
   "license": "MIT",
-  "dependencies": {
-    "express": "^4.18.2"
+  "devDependencies": {
+    "vercel": "^39.0.0"
   }
 }
